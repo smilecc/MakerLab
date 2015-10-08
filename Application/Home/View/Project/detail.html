@@ -1,0 +1,60 @@
+<extend name="Base/common"/>
+<block name="body">
+<title>{$proinfo['name']} - {:C('SITE_TITLE')}</title>
+  <div class="am-g" id="page-div">
+    <header class="am-g my-head">
+      <div class="am-u-sm-12 am-article">
+        <h1 class="am-article-title" id="baike_title">{$proinfo['name']} 
+         <if condition="$proinfo['username'] eq cookie('username')">
+        
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              操作 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="{:U('/Home/Project/edit').'?id='.$proinfo['id']}">修改信息</a></li>
+              <li><a href="{:U('/Home/Project/editdetail').'?id='.$proinfo['id']}">编辑详情</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">删除</a></li>
+            </ul>
+          </div>
+        </if>
+        <span class="am-badge am-radius am-badge-success am-text-sm">{$proinfo['TagName']}</span>
+        <span class="am-badge am-radius am-badge-warning am-text-sm">{$proinfo['TypeName']}</span>
+        <span class="am-badge am-radius am-badge-danger am-text-sm">{$proinfo['ProcessName']}</span>
+        </h1>
+        <p class="am-article-meta" id="baike_keyword">{$proinfo['intro']}</p>
+      </div>
+    </header>
+    <hr />
+    <div class="am-u-md-8">
+      <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">介绍</a></li>
+          <li role="presentation"><a href="#comment" aria-controls="comment" role="tab" data-toggle="tab">评论</a></li>
+          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">项目进展</a></li>
+        </ul>
+        <hr/>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">{:ParseMd($proinfo['detail'])}</div>
+          <div role="tabpanel" class="tab-pane" id="comment">
+            <div data-am-widget="duoshuo" class="am-duoshuo am-duoshuo-default" data-ds-short-name="smilecc">
+              <div class="ds-thread" >
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="messages">.3..</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="am-u-md-4">
+      <img src="/Public/Uploads/{$proinfo['img']}"/>
+    </div>
+  </div>
+
+  <script type="text/javascript">$('#proTab').tabs({noSwipe: 1});</script>
+</block>

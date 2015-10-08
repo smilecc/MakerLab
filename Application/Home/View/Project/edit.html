@@ -1,0 +1,97 @@
+<extend name="Base/common"/>
+
+<block name="body">
+<title>修改项目 - {:C('SITE_TITLE')}</title>
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="uploading">
+<div class="am-modal-dialog">
+  <div class="am-modal-hd">正在上传图片</div>
+  <div class="am-modal-bd">
+    <i class="am-icon-spinner am-icon-spin"></i>
+  </div>
+</div>
+</div>
+
+<form class="am-form" method="post" action="{:U('/Home/Project/addprj')}">
+  <fieldset>
+
+    <legend>修改项目</legend>
+
+    <div class="am-form-group">
+      <label for="doc-ipt-email-1">项目名称 <small>(最大16字)</small></label>
+      <input type="text" value="{$proinfo['name']}" class="" id="doc-ipt-email-1" name="name" placeholder="你的项目叫什么呢？" required/>
+    </div>
+
+    <div class="am-form-group am-form-file">
+      <label for="doc-ipt-file-2">上传封面 <small>(300*165)</small></label>
+
+      <div>
+        <button type="button" class="am-btn am-btn-default am-btn-sm">
+          <i class="am-icon-cloud-upload"></i> 选择要上传的图片</button>
+          <img class="am-radius am-img-thumbnail" id="imgdis" src="__PUBLIC__/Uploads/{$proinfo['img']}" alt=""/>
+      </div>
+      <input type="file" name="uploadImg" id="uploadImg">
+    </div>
+    <input type="hidden" value="{$proinfo['img']}" name="img" id="imgupload" required/>
+<script>
+  $(function() {
+    $('#uploadImg').on('change', function() {
+      var fileNames = '';
+      $.each(this.files, function() {
+      	console.log(this);
+      	upload();
+      });
+    });
+  });
+</script>
+
+<ul class="am-avg-sm-3 am-thumbnails">
+  <li>    
+  	<div class="am-form-group">
+      	<label for="doc-ipt-email-1">项目阶段</label>
+      	<div>
+		<select name="process" data-am-selected="{btnStyle: 'secondary'}">
+		<volist name="process" id="vo">
+		  <option value="{$vo['id']}" <if condition="$proinfo['process'] eq $vo['id']">selected</if>>{$vo['name']}</option>
+		 </volist>
+		</select>
+		</div>
+    </div>
+  </li>
+  <li>
+      <div class="am-form-group">
+      	<label for="doc-ipt-email-1">项目分类</label>
+      	<div>
+		<select name="type" data-am-selected="{btnStyle: 'secondary'}">
+		<volist name="type" id="vo">
+		  <option value="{$vo['id']}" <if condition="$proinfo['type'] eq $vo['id']">selected</if>>{$vo['name']}</option>
+		 </volist>
+		</select>
+		</div>
+    </div>
+  </li>
+    <li>
+      <div class="am-form-group">
+      	<label for="doc-ipt-email-1">项目标签</label>
+      	<div>
+		<select name="tag" data-am-selected="{btnStyle: 'secondary'}">
+		<volist name="tag" id="vo">
+		  <option value="{$vo['id']}" <if condition="$proinfo['tag'] eq $vo['id']">selected</if>>{$vo['name']}</option>
+		 </volist>
+		</select>
+		</div>
+    </div>
+  </li>
+</ul>
+
+    <div class="am-form-group">
+      <label for="doc-ta-1">项目简介 <small>(最大200字)</small></label>
+      <textarea name="intro" class="" rows="6" id="doc-ta-1" required/>{$proinfo['intro']}</textarea>
+    </div>
+    <input type="hidden" name="id" value="{$proinfo['id']}" />
+    <p><button type="submit" class="am-btn am-btn-success">提交</button>
+    <a class="am-btn am-btn-danger" href="{:U('/Home/Project/detail').'?id='.$proinfo['id']}">返回项目页面</a>
+    </p>
+  </fieldset>
+</form>
+
+</block>

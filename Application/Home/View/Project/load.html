@@ -1,0 +1,22 @@
+<volist name="prolist" id="vo">
+  <li>
+	<div class="am-panel am-panel-default">
+	  <div class="am-panel-hd">
+	    <h3 class="am-panel-title">{$vo['name']}</h3>
+	  </div>
+	  <div class="am-panel-bd am-panel-padding4">
+	    <a href="{:U('/Home/Project/detail').'?id='.$vo['id']}"><img class="am-radius" src="/Public/Uploads/{$vo['img']}" alt=""/></a>
+        <span class="am-badge am-radius am-badge-success am-text-sm">{$vo['TagName']}</span>
+        <span class="am-badge am-radius am-badge-warning am-text-sm">{$vo['TypeName']}</span>
+        <span class="am-badge am-radius am-badge-danger am-text-sm">{$vo['ProcessName']}</span>
+	  </div>
+	  <div class="am-panel-footer"><span class="am-icon-user"> {$vo['username']}</span></div>
+	</div>
+  </li>
+ </volist>
+
+<empty name="prolist">
+	<script type="text/javascript">$("#NoMoreProAlert").show()</script>
+<else />
+	<div id="pro_load_more"><button type="button" id="load_more_btn" class="am-btn am-btn-default am-btn-block btn-loading" onclick="LoadNextPage()">加载更多</button></div>
+</empty>

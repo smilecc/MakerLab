@@ -1,0 +1,80 @@
+<extend name="Base/common"/>
+<block name="body">
+
+<!-- content start -->
+<div class="admin-content">
+
+  <div class="am-cf am-padding">
+    <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">设置</strong> / <small>Setting</small></div>
+  </div>
+
+  <div class="am-tabs am-margin" data-am-tabs-noswipe="1">
+    <ul class="am-tabs-nav am-nav am-nav-tabs">
+      <li  class="am-active"><a href="#tab3">修改密码</a></li>
+    </ul>
+
+    <div class="am-tabs-bd">
+      <div class="am-tab-panel am-fade am-in am-active" id="tab3">
+        <form class="am-form">
+          <div class="am-g am-margin-top-sm">
+            <div class="am-u-sm-4 am-u-md-2 am-text-right">
+              原密码
+            </div>
+            <div class="am-u-sm-8 am-u-md-4 am-u-end">
+              <input type="password" id="input-old-password" class="am-input-sm">
+            </div>
+          </div>
+
+          <div class="am-g am-margin-top-sm">
+            <div class="am-u-sm-4 am-u-md-2 am-text-right">
+              新密码
+            </div>
+            <div class="am-u-sm-8 am-u-md-4 am-u-end">
+              <input type="password" id="input-new-password" class="am-input-sm">
+            </div>
+          </div>
+          <div class="am-g am-margin-top-sm">
+            <div class="am-u-sm-4 am-u-md-2 am-text-right">
+              重复输入
+            </div>
+            <div class="am-u-sm-8 am-u-md-4 am-u-end">
+              <input type="password" id="input-password-again" class="am-input-sm">
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="am-margin">
+    <button type="button" id="btn-change-password" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
+    <button type="button" class="am-btn am-btn-primary am-btn-xs">放弃保存</button>
+  </div>
+</div>
+<!-- content end -->
+
+<script type="text/javascript">
+  $(function() {
+  $('#btn-change-password').on('click', function() {
+    if($('#input-new-password').val() != $('#input-password-again').val())
+    {
+      error_notify_right('两次输入的密码不同');
+      return;
+    }
+          $.ajax({
+            type:"POST",
+            url:"{:U('User/Operation/ChangePassword')}",
+            data:{
+                  oldpw:$("#input-old-password").val(),
+                  newpw:$("#input-new-password").val()
+                  },
+            success:function(re){
+               notify_re(re);
+            }
+          });
+  });
+});
+</script>
+
+</block>

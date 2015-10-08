@@ -1,0 +1,58 @@
+<block name="header">
+
+<header class="am-topbar">
+<div class="am-container">
+  <h1 class="am-topbar-brand">
+    <a href="/">{:C('SITE_TITLE')}</a>
+  </h1>
+
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li class="" id="topbar-index"><a href="/">首页</a></li>
+      <li id="topbar-find"><a href="{:U('/Home/Project')}">发现</a></li>
+      <li id="topbar-join"><a href="{:U('/Home/Topic')}">参与</a></li>
+      <li id="topbar-good"><a href="{:U('/Home/Topic')}">优势</a></li>
+      <li id="topbar-addproject"><a href="{:U('/Home/Project/submit')}">+ 提交项目</a></li>
+    </ul>
+
+
+  <!--用户名下拉菜单-->
+  <div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-user">
+    <if condition="cookie('username') eq null">
+      <a href="{:U('/User/Login')}" class="am-btn am-btn-primary am-topbar-btn am-btn-sm am-text-white">登录</a>
+      <a href="{:U('/User/Login/register')}" class="am-btn am-btn-primary am-topbar-btn am-btn-sm am-text-white">注册</a>
+    <else />
+      <ul class="am-nav am-nav-pills am-topbar-nav">
+        <li class="am-dropdown" data-am-dropdown>
+          <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;"><!-- <span class="am-badge am-badge-danger am-round msg-badge">1</span> -->
+            {:cookie('username')} <span class="am-icon-caret-down"></span>
+          </a>
+          <ul class="am-dropdown-content">
+            <IF condition="$isAdmin">
+              <li class="am-dropdown-header">站点管理</li>
+              <li><a href="{:U('/Admin')}">管理中心</a></li>
+            </IF>
+            <li class="am-dropdown-header">用户操作</li>
+            <li><a href="{:U('/User/')}">用户中心</a></li>
+            <li class="am-divider"></li>
+            <li><a href="javascript:;" onclick="logout()">登出</a></li>
+          </ul>
+        </li>
+      </ul>
+      </if>
+    </div>
+
+<script type="text/javascript">
+  if(1 == 0) $('.msg-badge').css("display","none"); 
+</script>
+
+  </div>
+  </div>
+  <block name="headerImg">
+
+  </block>
+</header>
+
+</block>
