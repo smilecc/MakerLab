@@ -5,10 +5,12 @@
 	    <h3 class="am-panel-title">{$vo['name']}</h3>
 	  </div>
 	  <div class="am-panel-bd am-panel-padding4">
-	    <a href="{:U('/Home/Project/detail').'?id='.$vo['id']}"><img class="am-radius" src="/Public/Uploads/{$vo['img']}" alt=""/></a>
-        <span class="am-badge am-radius am-badge-success am-text-sm">{$vo['TagName']}</span>
-        <span class="am-badge am-radius am-badge-warning am-text-sm">{$vo['TypeName']}</span>
-        <span class="am-badge am-radius am-badge-danger am-text-sm">{$vo['ProcessName']}</span>
+	    <center><a href="{:U('/Home/Project/detail').'?id='.$vo['id']}"><img class="am-radius" src="/Public/Uploads/{$vo['img']}" alt=""/></a></center>
+	    <div class="project-type">
+	        <span class="am-badge am-radius am-badge-success am-text-sm">{$vo['TagName']}</span>
+	        <span class="am-badge am-radius am-badge-warning am-text-sm">{$vo['TypeName']}</span>
+	        <span class="am-badge am-radius am-badge-danger am-text-sm">{$vo['ProcessName']}</span>
+        </div>
 	  </div>
 	  <div class="am-panel-footer"><span class="am-icon-user"> {$vo['username']}</span></div>
 	</div>

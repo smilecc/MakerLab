@@ -1,0 +1,62 @@
+<extend name="Base/common"/>
+<block name="body">
+
+  <!-- content start -->
+  <div class="admin-content">
+
+    <div class="am-cf am-padding">
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">项目审核</strong> / <small>Check</small></div>
+    </div>
+
+
+    <div class="am-g">
+      <div class="am-u-sm-12">
+          <table class="am-table am-table-striped am-table-hover table-main">
+            <thead>
+              <tr>
+                <th class="table-check">
+                  <input type="checkbox" />
+                </th>
+                <th class="table-id">ID</th>
+                <th class="table-title">项目名称（点击查看详细内容）</th>
+                <th class="table-author am-hide-sm-only">提交人</th>
+                <th class="table-set">操作</th>
+              </tr>
+          </thead>
+          <tbody>
+
+          <volist name="ProList" id="vo">
+            <tr id="list-tr-{:$vo['id']}">
+              <td><input type="checkbox" /></td>
+              <td id="find-list-answerid-{:$vo['id']}">{:$vo['id']}</td>
+              <td>
+              <a href="javascript:;" data-am-collapse="{target: '#find-answer-<php>echo $vo['id']</php>'}">{:$vo['name']}</a>
+                <div id="find-answer-{:$vo['id']}" class="am-collapse">
+                  {:$vo['intro']}
+                  <br/><a target="_blank" href="{:U('/Home/Project/detail'.'?id='.$vo['id'])}">查看详细</a>
+                </div>
+              </td>
+              <td class="am-hide-sm-only">{:$vo['username']}</td>
+              <!--<td class="am-hide-sm-only">2014年9月4日 7:28:47</td>-->
+              <td>
+                <div class="am-btn-toolbar">
+                  <div class="am-btn-group am-btn-group-xs">
+                    <button class="am-btn am-btn-default am-btn-xs am-text-secondary" onclick="AllowBtnClick({:$vo['id']},1)"><span class="am-icon-pencil-square-o"></span> 允许</button>
+                    <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only" onClick="AllowBtnClick({:$vo['id']},2)"><span class="am-icon-trash-o"></span> 驳回</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </volist>
+
+          </tbody>
+        </table>
+          <div class="am-cf">共 {:count($ProList)} 条记录</div>
+          <hr />
+      </div>
+
+    </div>
+  </div>
+  <!-- content end -->
+
+</block>

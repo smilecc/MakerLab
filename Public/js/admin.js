@@ -1,5 +1,6 @@
 function notify_re(re)
 {
+  console.log(re);
   var jsonObject = JSON.parse(re);
   if(jsonObject['status']){
     success_notify_right(jsonObject['info']);
@@ -7,7 +8,7 @@ function notify_re(re)
   }
   else
   {
-    error_notify_right(jsonObject['error']);
+    error_notify_right(jsonObject['info']);
     return false;
   }
 }
@@ -33,43 +34,20 @@ $(function() {
   });
 });
 
-function DeleteFindBtnClick(delete_id)
+function AllowBtnClick(agr_id,agr_llow)
 {
   $.ajax({
   type:"POST",
-  url:"/index.php/Admin/Find/DeleteItem",
+  url:"/index.php/Admin/Check/SetProjectAllow",
   data:{
-        id:delete_id
+        id:agr_id,
+        allow:agr_llow
         },
   success:function(re){
         if(notify_re(re))
         {
-        	$('#find-list-tr-'+delete_id).fadeOut(800);
+        	$('#list-tr-'+agr_id).fadeOut(800);
         }
   }
   });
-}
-
-function EditFindBtnClick(edit_id)
-{
-	$("#input-find-edit-answerid").val($("#find-list-answerid-"+edit_id).text());
-	$("#input-find-edit-order").val($("#find-list-order-"+edit_id).text());
-	
-    $('#find-edit-prompt').modal({
-      relatedTarget: this,
-      onConfirm: function(e) {
-          $.ajax({
-		        type:"POST",
-		        url:"/index.php/Admin/Find/EditItem",
-		        data:{
-		        	  id:edit_id,
-		              answer_id:$("#input-find-edit-answerid").val(),
-		              order:$("#input-find-edit-order").val()
-		              },
-		        success:function(re){
-               notify_re(re);
-		        }
-          });
-      }
-    });
 }

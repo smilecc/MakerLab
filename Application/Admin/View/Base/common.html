@@ -2,6 +2,7 @@
 <php>
 	$auto_login = new \User\Api\UserApi;
     $auto_login->autologin();
+    if(!IsAdmin()) exit('Permission error');
 </php>
 <html class="no-js">
 <head>

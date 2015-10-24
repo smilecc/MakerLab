@@ -41,6 +41,7 @@
   <script src="/Public/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>
   <script src="/Public/assets/js/amazeui.min.js"></script>
+
   <script src="/Public/js/notify.js"></script>
 <!--<![endif]-->
 
@@ -75,8 +76,8 @@
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Project');?>">发现</a></li>
-      <li id="topbar-join"><a href="<?php echo U('/Home/Topic');?>">参与</a></li>
-      <li id="topbar-good"><a href="<?php echo U('/Home/Topic');?>">优势</a></li>
+      <li id="topbar-join"><a href="<?php echo U('/Home/Activity');?>">参与</a></li>
+<!--       <li id="topbar-good"><a href="<?php echo U('/Home/Topic');?>">优势</a></li> -->
       <li id="topbar-addproject"><a href="<?php echo U('/Home/Project/submit');?>">+ 提交项目</a></li>
     </ul>
 
@@ -92,7 +93,7 @@
             <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
           </a>
           <ul class="am-dropdown-content">
-            <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
+            <?php if(IsAdmin()): ?><li class="am-dropdown-header">站点管理</li>
               <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
             <li class="am-dropdown-header">用户操作</li>
             <li><a href="<?php echo U('/User/');?>">用户中心</a></li>
@@ -113,11 +114,11 @@
   <div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{&quot;controlNav&quot;:false}' >
   <ul class="am-slides">
       <li>
-        	<a href="#"><img src="http://lab.haier.com/uploads/2015/0916/2300x487-01%281%29.jpg"></a>
+        	<a href="#"><img src="/Public/19700101561c6494d307b.jpg"></a>
          
       </li>
       <li>
-        	<a href="#"><img src="http://lab.haier.com/uploads/2015/0910/14402221610000002.jpg"></a>
+        	<a href="#"><img src="/Public/19700101561c6494d307b.jpg"></a>
          
       </li>
   </ul>

@@ -21,7 +21,7 @@ class UserApi{
                 $userinfo = M('User')->where('username="%s"',cookie('username'))->find();
                 if(cookie('token') == login_en_code($userinfo['random'].$userinfo['username'])){
                     session('user_status',2);
-                }
+                } else $this->logout();
             }
         }
     }

@@ -22,6 +22,7 @@ function ParseMd($text)
 {
    return Parsedown::instance()
     ->setBreaksEnabled(true)
+    ->setMarkupEscaped(true) # escapes markup (HTML)
     ->text($text);
 }
 // 解析Markdown文本 - 行模式
@@ -31,6 +32,16 @@ function ParseMdLine($text)
     ->setBreaksEnabled(true)
     ->setMarkupEscaped(true) # escapes markup (HTML)
     ->line($text);
+}
+
+// 用于检测用户是否为管理员身份
+function IsAdmin()
+{
+    if(test_user())
+    {
+        if(M('User')->where('username="%s"',cookie('username'))->getField('admin')) return true;
+        else return false;
+    }else return false;
 }
 
 #

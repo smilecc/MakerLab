@@ -1,0 +1,2 @@
+<?php if (!defined('THINK_PATH')) exit(); if(is_array($ProcessList)): $i = 0; $__LIST__ = $ProcessList;if( count($__LIST__)==0 ) : echo "暂无进展信息" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><h3><?php echo ($vo['content']); ?> <small><?php echo ($vo['time']); ?></small></h3>
+	<hr/><?php endforeach; endif; else: echo "暂无进展信息" ;endif; ?>

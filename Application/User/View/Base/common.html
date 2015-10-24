@@ -2,6 +2,7 @@
 <php>
 	$auto_login = new \User\Api\UserApi;
     $auto_login->autologin();
+    if(!test_user()) exit('Not Login');
 </php>
 <html class="no-js">
 <head>

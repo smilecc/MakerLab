@@ -41,6 +41,7 @@
   <script src="/Public/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>
   <script src="/Public/assets/js/amazeui.min.js"></script>
+
   <script src="/Public/js/notify.js"></script>
 <!--<![endif]-->
 
@@ -75,8 +76,8 @@
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Project');?>">发现</a></li>
-      <li id="topbar-join"><a href="<?php echo U('/Home/Topic');?>">参与</a></li>
-      <li id="topbar-good"><a href="<?php echo U('/Home/Topic');?>">优势</a></li>
+      <li id="topbar-join"><a href="<?php echo U('/Home/Activity');?>">参与</a></li>
+<!--       <li id="topbar-good"><a href="<?php echo U('/Home/Topic');?>">优势</a></li> -->
       <li id="topbar-addproject"><a href="<?php echo U('/Home/Project/submit');?>">+ 提交项目</a></li>
     </ul>
 
@@ -92,7 +93,7 @@
             <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
           </a>
           <ul class="am-dropdown-content">
-            <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
+            <?php if(IsAdmin()): ?><li class="am-dropdown-header">站点管理</li>
               <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
             <li class="am-dropdown-header">用户操作</li>
             <li><a href="<?php echo U('/User/');?>">用户中心</a></li>
@@ -154,14 +155,14 @@
 
 <ul class="list-group">
   <li class="list-group-item">
-	<ul class="am-nav am-nav-pills am-text-xs">
+	<ul class="am-nav am-nav-pills am-text-xs project-type-list">
 	  <li class="am-active"><a style="background-color:#5eb95e !important;">项目类型</a></li>
 	  <li id="type-0"><a href="javascript:;" onclick="OnTypeClick(0)">全部</a></li>
 	  <?php if(is_array($type)): $i = 0; $__LIST__ = $type;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li id="type-<?php echo ($vo['id']); ?>"><a href="javascript:;" onclick="OnTypeClick(<?php echo ($vo['id']); ?>)"><?php echo ($vo['name']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 	</ul>
   </li>
   <li class="list-group-item">
-	<ul class="am-nav am-nav-pills am-text-xs">
+	<ul class="am-nav am-nav-pills am-text-xs project-type-list">
 	  <li class="am-active"><a style="background-color:#5eb95e !important;">项目状态</a></li>
 	  <li id="process-0"><a href="javascript:;" onclick="OnProcessClick(0)">全部</a></li>
 	  <?php if(is_array($process)): $i = 0; $__LIST__ = $process;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li id="process-<?php echo ($vo['id']); ?>"><a href="javascript:;" onclick="OnProcessClick(<?php echo ($vo['id']); ?>)"><?php echo ($vo['name']); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -180,7 +181,7 @@
 </ul>
 <script type="text/javascript">LoadNextPage();</script>
 
-<div id="NoMoreProAlert" style="display:none;" class="am-alert am-alert-success" data-am-alert>
+<div id="NoMoreProAlert" class="NoMore-alert am-alert am-alert-default" data-am-alert>
   <p class="am-text-center">没有更多的项目了</p>
 </div>
 

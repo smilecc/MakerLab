@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!IsAdmin()) exit('Permission error'); ?>
 <html class="no-js">
 <head>
 	<!doctype html>
@@ -47,8 +47,6 @@
     <strong><?php echo C('SITE_TITLE');?></strong> <small>Admin Center</small>
   </div>
 
-  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
   <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
 
     <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
@@ -57,31 +55,18 @@
 
   </div>
 </header>
-
+  
 <div class="am-cf admin-main">
   <!-- sidebar start -->
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
         <li><a href="<?php echo U('/Admin/Index');?>"><span class="am-icon-home"> 系统概述</span></a></li>
-        <li><a href="<?php echo U('/Admin/Setting');?>"><span class="am-icon-user"> 账户设置</span></a></li>
-
+        <li><a href="<?php echo U('/Admin/Check');?>"><span class="am-icon-server"> 项目审核</span></a></li>
+        <li><a href="<?php echo U('/Admin/Activity');?>"><span class="am-icon-soccer-ball-o"> 创建活动</span></a></li>
         <li><a href="<?php echo U('/');?>"><span class="am-icon-sign-out"> 返回主站</span></a></li>
       </ul>
-
-      <div class="am-panel am-panel-default admin-sidebar-panel">
-        <div class="am-panel-bd">
-          <p><span class="am-icon-bookmark"></span> 公告</p>
-          <p>一切慢慢来。</p>
-        </div>
-      </div>
-
-      <div class="am-panel am-panel-default admin-sidebar-panel">
-        <div class="am-panel-bd">
-          <p><span class="am-icon-tag"></span> 啦啦啦</p>
-          <p>闭眼随便过，睁眼将就活，我们的生活多美好</p>
-        </div>
-      </div>
+      
     </div>
   </div>
   <!-- sidebar end -->
@@ -95,53 +80,16 @@
   <div class="admin-content">
 
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">我的项目</strong> / <small>Index</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">网站概述</strong> / <small>Index</small></div>
     </div>
 
     <ul class="am-avg-sm-1 am-avg-md-3 am-margin am-padding am-text-center admin-content-list ">
-      <li><span class="am-icon-btn am-icon-file-text"></span><br/>拥有项目<br/><?php echo count($pro);?></li>
-      <li><span class="am-icon-btn am-icon-briefcase"></span><br/>关注项目<br/><?php echo $page['answerCount'];?></li>
-      <li><span class="am-icon-btn am-icon-recycle"></span><br/>参加活动<br/><?php echo $page['topicCount'];?></li>
-
+      <li><span class="am-icon-btn am-icon-file-text"></span><br/>拥有项目<br/><?php echo $ProCount;?></li>
+      <li><span class="am-icon-btn am-icon-user"></span><br/>拥有用户<br/><?php echo $UserCount;?></li>
+      <li><span class="am-icon-btn am-icon-recycle"></span><br/>未审核项目<br/><?php echo $UncheckProCount;?></li>
     </ul>
-
-    <div class="am-g">
-      <div class="am-u-md-12">
-        <div class="am-panel am-panel-default">
-          <div class="am-panel-hd am-cf" data-am-collapse="{target: '#collapse-panel-2'}">项目列表<span class="am-icon-chevron-down am-fr" ></span></div>
-          <div id="collapse-panel-2" class="am-in">
-            <table class="am-table am-table-bd am-table-bdrs am-table-striped">
-            <thead>
-              <tr>
-                <th class="am-text-center">#</th>
-                <th>项目名</th>
-                <th>状态</th>
-                <th>审核情况</th>
-                <th>创建时间</th>
-              </tr>
-          </thead>
-
-              <tbody>
-              <?php if(is_array($pro)): foreach($pro as $k=>$vo): ?><tr>
-                <td class="am-text-center"><?php echo $k+1;?></td>
-                <td><?php echo $vo['name'];?></td>
-                <td><?php echo $vo['ProcessName'];?></td>
-                <td><?php echo ($vo['allow']?'通过':'正在审核');?></td>
-                <td><?php echo $vo['time'];?></td>
-              </tr><?php endforeach; endif; ?>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </div>
-
-
-
-
-      </div>
     </div>
-  </div>
+
 
 
 

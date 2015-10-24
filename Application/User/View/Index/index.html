@@ -5,7 +5,7 @@
   <div class="admin-content">
 
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">我的项目</strong> / <small>Index</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">我的概述</strong> / <small>Index</small></div>
     </div>
 
     <ul class="am-avg-sm-1 am-avg-md-3 am-margin am-padding am-text-center admin-content-list ">
@@ -18,7 +18,7 @@
     <div class="am-g">
       <div class="am-u-md-12">
         <div class="am-panel am-panel-default">
-          <div class="am-panel-hd am-cf" data-am-collapse="{target: '#collapse-panel-2'}">项目列表<span class="am-icon-chevron-down am-fr" ></span></div>
+          <div class="am-panel-hd am-cf" data-am-collapse="{target: '#collapse-panel-2'}">我的项目<span class="am-icon-chevron-down am-fr" ></span></div>
           <div id="collapse-panel-2" class="am-in">
             <table class="am-table am-table-bd am-table-bdrs am-table-striped">
             <thead>
@@ -35,9 +35,15 @@
               <foreach name="pro" item="vo" key="k">
               <tr>
                 <td class="am-text-center">{:$k+1}</td>
-                <td>{:$vo['name']}</td>
+                <td><a target="_blank" href="{:U('/Home/Project/detail'.'?id='.$vo['id'])}">{:$vo['name']}</a></td>
                 <td>{:$vo['ProcessName']}</td>
-                <td>{:($vo['allow']?'通过':'正在审核')}</td>
+                <td>
+                  <php>
+                    if($vo['allow'] == 1) echo('通过');
+                    else if($vo['allow'] == 2) echo('被驳回');
+                    else  echo('待审核');
+                  </php>
+                </td>
                 <td>{:$vo['time']}</td>
               </tr>
               </foreach>

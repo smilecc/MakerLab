@@ -1,0 +1,416 @@
+[ 2015-10-09T17:17:27+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+ERR: SQLSTATE[HY000] [2002] Connection refused
+
+[ 2015-10-09T17:18:08+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'lab'
+
+[ 2015-10-09T17:22:45+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2015-10-09T17:22:48+08:00 ] ::1 /index.php/Home/Project.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2015-10-09T17:22:48+08:00 ] ::1 /index.php/Home/Project/load.html?page=1&type=0&process=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `lab_project` WHERE ( 1 ) LIMIT 0,12   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2015-10-09T17:22:49+08:00 ] ::1 /index.php/Home/Project/detail.html?id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `lab_project` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-10-09T17:22:55+08:00 ] ::1 /index.php/Home/Project/submit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2015-10-09T17:22:57+08:00 ] ::1 /index.php/Home/Project.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2015-10-09T17:22:57+08:00 ] ::1 /index.php/Home/Project/load.html?page=1&type=0&process=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `lab_project` WHERE ( 1 ) LIMIT 0,12   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2015-10-09T17:22:58+08:00 ] ::1 /index.php/Home/Project/submit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2015-10-09T17:23:48+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: isAdmin /Users/smilec/Code/Lab/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-10-09T20:35:55+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: isAdmin /Users/smilec/Code/Lab/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2015-10-09T20:35:58+08:00 ] ::1 /index.php/Home/Project.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: isAdmin /Users/smilec/Code/Lab/Application/Runtime/Cache/Home/9d459e48cece1d7473e65af45d1fe54a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2015-10-09T20:35:58+08:00 ] ::1 /index.php/Home/Project/load.html?page=1&type=0&process=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lab_project` WHERE ( 1 ) LIMIT 0,12   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=3 )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2015-10-09T20:36:01+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: isAdmin /Users/smilec/Code/Lab/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2015-10-09T20:36:02+08:00 ] ::1 /index.php/Home/Project/submit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `lab_project_class` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lab_project_class` WHERE ( class=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: isAdmin /Users/smilec/Code/Lab/Application/Runtime/Cache/Home/69a04d5de710aba4d9e144f8c15cb347.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000914s ]
+
+[ 2015-10-09T20:36:03+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: isAdmin /Users/smilec/Code/Lab/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2015-10-09T20:36:41+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: isAdmin /Users/smilec/Code/Lab/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026576s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/smilec/Code/Lab/Application/Home/Controller/IndexController.class.php:6) /Users/smilec/Code/Lab/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/smilec/Code/Lab/Application/Home/Controller/IndexController.class.php:6) /Users/smilec/Code/Lab/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /Users/smilec/Code/Lab/Application/Home/Controller/IndexController.class.php:6) /Users/smilec/Code/Lab/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+

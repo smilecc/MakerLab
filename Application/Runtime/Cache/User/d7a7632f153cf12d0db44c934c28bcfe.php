@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) exit('Not Login'); ?>
 <html class="no-js">
 <head>
 	<!doctype html>
@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo C('SITE_TITLE');?> Admin Center</title>
+  <title><?php echo C('SITE_TITLE');?> User Center</title>
   <meta name="description" content="这是一个 index 页面">
   <meta name="keywords" content="index">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -63,7 +63,7 @@
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
-        <li><a href="<?php echo U('/User/Index');?>"><span class="am-icon-home"> 我的项目</span></a></li>
+        <li><a href="<?php echo U('/User/Index');?>"><span class="am-icon-home"> 我的概述</span></a></li>
         <li><a href="<?php echo U('/User/Setting');?>"><span class="am-icon-user"> 账户设置</span></a></li>
 
         <li><a href="<?php echo U('/');?>"><span class="am-icon-sign-out"> 返回主站</span></a></li>
@@ -95,7 +95,7 @@
   <div class="admin-content">
 
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">我的项目</strong> / <small>Index</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">我的概述</strong> / <small>Index</small></div>
     </div>
 
     <ul class="am-avg-sm-1 am-avg-md-3 am-margin am-padding am-text-center admin-content-list ">
@@ -108,7 +108,7 @@
     <div class="am-g">
       <div class="am-u-md-12">
         <div class="am-panel am-panel-default">
-          <div class="am-panel-hd am-cf" data-am-collapse="{target: '#collapse-panel-2'}">项目列表<span class="am-icon-chevron-down am-fr" ></span></div>
+          <div class="am-panel-hd am-cf" data-am-collapse="{target: '#collapse-panel-2'}">我的项目<span class="am-icon-chevron-down am-fr" ></span></div>
           <div id="collapse-panel-2" class="am-in">
             <table class="am-table am-table-bd am-table-bdrs am-table-striped">
             <thead>
@@ -124,9 +124,11 @@
               <tbody>
               <?php if(is_array($pro)): foreach($pro as $k=>$vo): ?><tr>
                 <td class="am-text-center"><?php echo $k+1;?></td>
-                <td><?php echo $vo['name'];?></td>
+                <td><a target="_blank" href="<?php echo U('/Home/Project/detail'.'?id='.$vo['id']);?>"><?php echo $vo['name'];?></a></td>
                 <td><?php echo $vo['ProcessName'];?></td>
-                <td><?php echo ($vo['allow']?'通过':'正在审核');?></td>
+                <td>
+                  <?php if($vo['allow'] == 1) echo('通过'); else if($vo['allow'] == 2) echo('被驳回'); else echo('待审核'); ?>
+                </td>
                 <td><?php echo $vo['time'];?></td>
               </tr><?php endforeach; endif; ?>
               </tbody>

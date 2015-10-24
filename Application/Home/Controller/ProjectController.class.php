@@ -17,6 +17,11 @@ class ProjectController extends Controller {
     }
 
     public function submit(){
+    	if(!test_user())
+    	{
+    		$this->error('您还没有登录');
+    		return;
+    	}
     	$process = M('ProjectClass')->where('class=1')->select();
     	$type = M('ProjectClass')->where('class=2')->select();
     	$tag = M('ProjectClass')->where('class=3')->select();
@@ -102,7 +107,7 @@ class ProjectController extends Controller {
 		}
 		
 		if($res > 0){
-			header('Location: '.U('/Home/Project/detail').'?id='.$id);
+			header('Location: '.U('/Home/Project/editdetail').'?id='.$id);
 		}
 		else $this->error('未修改或系统异常');
 	}
@@ -110,6 +115,15 @@ class ProjectController extends Controller {
 	public function detail($id)
 	{
 		$projectInfo = M('Project')->where('id=%d',$id)->find();
+		if($projectInfo['allow'] != 1)
+		{
+			if($projectInfo['username'] == cookie('username') or IsAdmin()){}
+			else
+				{
+					$this->error('您没有访问的权限');
+					return;
+				}
+		}
 		D('ProjectClass')->ClassFactory($projectInfo);
 		$this->assign('proinfo',$projectInfo);
 		$this->display();
@@ -117,7 +131,7 @@ class ProjectController extends Controller {
 
 	public function editdetail($id=0)
 	{
-		$detail = M('Project')->where('id=%d',$id)->getField('detail');
+		$detail = htmlspecialchars(M('Project')->where('id=%d',$id)->getField('detail'));
 		$this->assign('detail',strtr($detail,array('\\'=>'\\\\',"'"=>"\\'","\r\n"=>'\\n')));
 		$this->assign('id',$id);
 		$this->display();
@@ -147,13 +161,51 @@ class ProjectController extends Controller {
     	}
 
     	if($process == 0){
-    		$sqlConditionStr = $sqlConditionStr.'1';
+    		$sqlConditionStr = $sqlConditionStr.'allow=1';
     	}else{
-    		$sqlConditionStr = $sqlConditionStr.'process='.$process;
+    		$sqlConditionStr = $sqlConditionStr.'process='.$process.' AND allow=1';
     	}
     	$proList = M('Project')->where($sqlConditionStr)->page($page,12)->select();
     	D('ProjectClass')->ArrayClassFactory($proList);
     	$this->assign('prolist',$proList);
     	$this->display();
+	}
+
+	public function process($pid)
+	{
+		$process = M('ProjectProcess')->where('project_id=%d',$pid)->order('id desc')->select();
+		$this->assign('ProcessList',$process);
+		$this->display();
+	}
+
+	public function AddProcess($pid,$content)
+	{
+		$resJson = array(
+			'status' => false
+			);
+		
+		// 检测用户状态
+		$ProCreater = M('Project')->where('id=%d',$pid)->getField('username');
+		if(test_user() && $ProCreater == cookie('username'))
+		{
+			$data = array(
+				'project_id' => $pid,
+				'content' 	 => htmlspecialchars($content)
+				);
+			if(M('ProjectProcess')->add($data))
+			{
+				$resJson['status'] = true;
+				$resJson['info'] = '更新成功';
+			}
+			else
+			{
+				$resJson['error'] = '添加失败，系统异常';
+			}
+		}
+		else
+		{
+			$resJson['error'] = '账号异常';
+		}
+		echo json_encode($resJson);
 	}
 }

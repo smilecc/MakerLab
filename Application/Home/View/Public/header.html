@@ -12,8 +12,8 @@
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="{:U('/Home/Project')}">发现</a></li>
-      <li id="topbar-join"><a href="{:U('/Home/Topic')}">参与</a></li>
-      <li id="topbar-good"><a href="{:U('/Home/Topic')}">优势</a></li>
+      <li id="topbar-join"><a href="{:U('/Home/Activity')}">参与</a></li>
+<!--       <li id="topbar-good"><a href="{:U('/Home/Topic')}">优势</a></li> -->
       <li id="topbar-addproject"><a href="{:U('/Home/Project/submit')}">+ 提交项目</a></li>
     </ul>
 
@@ -30,7 +30,7 @@
             {:cookie('username')} <span class="am-icon-caret-down"></span>
           </a>
           <ul class="am-dropdown-content">
-            <IF condition="$isAdmin">
+            <IF condition="IsAdmin()">
               <li class="am-dropdown-header">站点管理</li>
               <li><a href="{:U('/Admin')}">管理中心</a></li>
             </IF>

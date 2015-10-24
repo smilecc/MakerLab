@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); ?>
+<?php $auto_login = new \User\Api\UserApi; $auto_login->autologin(); if(!test_user()) exit('Not Login'); ?>
 <html class="no-js">
 <head>
 	<!doctype html>
@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo C('SITE_TITLE');?> Admin Center</title>
+  <title><?php echo C('SITE_TITLE');?> User Center</title>
   <meta name="description" content="这是一个 index 页面">
   <meta name="keywords" content="index">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -63,7 +63,7 @@
   <div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
-        <li><a href="<?php echo U('/User/Index');?>"><span class="am-icon-home"> 我的项目</span></a></li>
+        <li><a href="<?php echo U('/User/Index');?>"><span class="am-icon-home"> 我的概述</span></a></li>
         <li><a href="<?php echo U('/User/Setting');?>"><span class="am-icon-user"> 账户设置</span></a></li>
 
         <li><a href="<?php echo U('/');?>"><span class="am-icon-sign-out"> 返回主站</span></a></li>

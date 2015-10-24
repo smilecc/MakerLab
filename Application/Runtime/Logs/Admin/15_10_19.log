@@ -1,0 +1,1765 @@
+[ 2015-10-19T10:19:14+08:00 ] ::1 /index.php/Admin/Activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0048s ]
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 92 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 161 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001522s ]
+
+[ 2015-10-19T10:19:22+08:00 ] ::1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lab_project` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lab_user` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lab_project` WHERE ( allow=0 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-10-19T10:19:25+08:00 ] ::1 /index.php/Admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lab_project` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lab_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lab_project` WHERE ( allow=0 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2015-10-19T10:19:27+08:00 ] ::1 /index.php/Admin/Activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 92 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 161 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2015-10-19T10:29:06+08:00 ] ::1 /index.php/Admin/Activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 92 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 161 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001199s ]
+
+[ 2015-10-19T10:34:14+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2015-10-19T10:34:28+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2015-10-19T10:34:28+08:00 ] ::1 /index.php/Admin/Activity/assets/i/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+
+[ 2015-10-19T10:34:32+08:00 ] ::1 /index.php/Admin/Activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 92 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 161 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2015-10-19T10:34:36+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0021s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2015-10-19T11:35:06+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2015-10-19T11:41:18+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001384s ]
+
+[ 2015-10-19T11:41:46+08:00 ] ::1 /index.php/Admin/Check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `lab_project` WHERE ( allow=0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2015-10-19T11:41:51+08:00 ] ::1 /index.php/Admin/Activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 92 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 161 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 165 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000641s ]
+
+[ 2015-10-19T11:42:22+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2015-10-19T11:43:29+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001301s ]
+
+[ 2015-10-19T11:44:06+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2015-10-19T11:44:45+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2015-10-19T11:45:09+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2015-10-19T11:45:16+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2015-10-19T11:45:23+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2015-10-19T21:45:51+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2015-10-19T21:46:09+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2015-10-19T21:46:35+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2015-10-19T21:49:58+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2015-10-19T21:52:29+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2015-10-19T21:53:09+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0019s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2015-10-19T21:53:11+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2015-10-19T21:53:40+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2015-10-19T21:54:03+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2015-10-19T21:55:41+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2015-10-19T21:56:00+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2015-10-19T21:56:25+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2015-10-19T21:57:29+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2015-10-19T21:57:47+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2015-10-19T22:02:13+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2015-10-19T22:03:38+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2015-10-19T22:04:48+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2015-10-19T22:05:53+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001226s ]
+
+[ 2015-10-19T22:06:22+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2015-10-19T22:06:28+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2015-10-19T22:07:54+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-10-19T22:08:37+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000580s ]
+
+[ 2015-10-19T22:08:50+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0019s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2015-10-19T22:09:06+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2015-10-19T22:10:10+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2015-10-19T22:13:26+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2015-10-19T22:14:11+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0019s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2015-10-19T22:14:20+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000539s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2015-10-19T22:14:42+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019998s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2015-10-19T22:15:37+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2015-10-19T22:17:35+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2015-10-19T22:17:46+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2015-10-19T22:18:06+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2015-10-19T22:18:34+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2015-10-19T22:19:28+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2015-10-19T22:19:40+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0024s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2015-10-19T22:20:19+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2015-10-19T22:20:21+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2015-10-19T22:22:50+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2015-10-19T22:23:35+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2015-10-19T22:23:42+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2015-10-19T22:35:15+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2015-10-19T22:40:43+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0022s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2015-10-19T22:44:13+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2015-10-19T23:15:35+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002098s ]
+
+[ 2015-10-19T23:19:39+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0020s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2015-10-19T23:28:02+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2015-10-19T23:32:25+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2015-10-19T23:34:25+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-10-19T23:35:13+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2015-10-19T23:37:21+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2015-10-19T23:37:29+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2015-10-19T23:37:33+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+
+[ 2015-10-19T23:37:55+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-10-19T23:38:15+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2015-10-19T23:38:19+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2015-10-19T23:40:57+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2015-10-19T23:43:00+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-10-19T23:54:05+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002225s ]
+
+[ 2015-10-19T23:56:18+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0016s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001366s ]
+
+[ 2015-10-19T23:57:13+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0019s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2015-10-19T23:57:40+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-10-19T23:59:27+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0028s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+

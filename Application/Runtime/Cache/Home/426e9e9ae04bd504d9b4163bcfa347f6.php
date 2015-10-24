@@ -41,6 +41,7 @@
   <script src="/Public/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>
   <script src="/Public/assets/js/amazeui.min.js"></script>
+
   <script src="/Public/js/notify.js"></script>
 <!--<![endif]-->
 
@@ -75,7 +76,7 @@
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Project');?>">发现</a></li>
-      <li id="topbar-join"><a href="<?php echo U('/Home/Topic');?>">参与</a></li>
+      <li id="topbar-join"><a href="<?php echo U('/Home/Activity');?>">参与</a></li>
       <li id="topbar-good"><a href="<?php echo U('/Home/Topic');?>">优势</a></li>
       <li id="topbar-addproject"><a href="<?php echo U('/Home/Project/submit');?>">+ 提交项目</a></li>
     </ul>
@@ -92,7 +93,7 @@
             <?php echo cookie('username');?> <span class="am-icon-caret-down"></span>
           </a>
           <ul class="am-dropdown-content">
-            <?php if($isAdmin): ?><li class="am-dropdown-header">站点管理</li>
+            <?php if(IsAdmin()): ?><li class="am-dropdown-header">站点管理</li>
               <li><a href="<?php echo U('/Admin');?>">管理中心</a></li><?php endif; ?>
             <li class="am-dropdown-header">用户操作</li>
             <li><a href="<?php echo U('/User/');?>">用户中心</a></li>
@@ -121,6 +122,20 @@
 	<div class="am-container">
 	
 <title><?php echo ($proinfo['name']); ?> - <?php echo C('SITE_TITLE');?></title>
+<div class="am-modal am-modal-prompt" tabindex="-1" id="my-prompt">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">新增项目进程</div>
+    <div class="am-modal-bd">
+      <p>请描述你项目的最新进展</p>
+      <input id="ProcessContent" type="text" class="am-modal-prompt-input">
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>提交</span>
+    </div>
+  </div>
+</div>
+
   <div class="am-g" id="page-div">
     <header class="am-g my-head">
       <div class="am-u-sm-12 am-article">
@@ -130,11 +145,36 @@
               操作 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
+              <li><a id="doc-prompt-toggle" href="javascript:;">新增进度</a></li>
               <li><a href="<?php echo U('/Home/Project/edit').'?id='.$proinfo['id'];?>">修改信息</a></li>
               <li><a href="<?php echo U('/Home/Project/editdetail').'?id='.$proinfo['id'];?>">编辑详情</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">删除</a></li>
+<!--               <li role="separator" class="divider"></li>
+              <li><a href="#">删除</a></li> -->
             </ul>
+
+<script type="text/javascript">
+$(function() {
+  $('#doc-prompt-toggle').on('click', function() {
+    $('#my-prompt').modal({
+      relatedTarget: this,
+      onConfirm: function(e) {
+          $.ajax({
+            type:"POST",
+            url:"/index.php/Home/Project/AddProcess.html",
+            data:{
+                  pid:<?php echo ($proinfo['id']); ?>,
+                  content:$('#ProcessContent').val()
+                  },
+            success:function(re){
+              notify_re(re);
+              $('#messages').load('/index.php/Home/Project/process.html?pid=<?php echo ($proinfo['id']); ?>');
+            }
+          });
+      }
+    });
+  });
+});
+</script>
           </div><?php endif; ?>
         <span class="am-badge am-radius am-badge-success am-text-sm"><?php echo ($proinfo['TagName']); ?></span>
         <span class="am-badge am-radius am-badge-warning am-text-sm"><?php echo ($proinfo['TypeName']); ?></span>
@@ -155,7 +195,7 @@
         </ul>
         <hr/>
         <!-- Tab panes -->
-        <div class="tab-content">
+        <div class="tab-content detail-content">
           <div role="tabpanel" class="tab-pane active" id="home"><?php echo ParseMd($proinfo['detail']);?></div>
           <div role="tabpanel" class="tab-pane" id="comment">
             <div data-am-widget="duoshuo" class="am-duoshuo am-duoshuo-default" data-ds-short-name="smilecc">
@@ -163,7 +203,12 @@
               </div>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="messages">.3..</div>
+          <div role="tabpanel" class="tab-pane" id="messages">
+              
+          </div>
+          <script type="text/javascript">
+          $('#messages').load('/index.php/Home/Project/process.html?pid=<?php echo ($proinfo['id']); ?>');
+          </script>
         </div>
 
       </div>

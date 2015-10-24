@@ -1,0 +1,24 @@
+[ 2015-10-17T08:50:03+08:00 ] ::1 /index.php/assets/i/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+ERR: 无法加载模块:Assets
+
+[ 2015-10-17T08:52:14+08:00 ] ::1 /Public/js/ajaxfileupload.js.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+ERR: 无法加载模块:Public
+
+[ 2015-10-17T08:53:11+08:00 ] ::1 /Public/js/ajaxfileupload.js.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+ERR: 无法加载模块:Public
+
+[ 2015-10-17T10:19:50+08:00 ] ::1 /docs-assets/ico/favicon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+ERR: 无法加载模块:Docs-assets
+

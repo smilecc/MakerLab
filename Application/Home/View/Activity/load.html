@@ -1,0 +1,23 @@
+<volist name="acList" id="vo">
+  <li>
+	<div class="am-panel am-panel-default">
+	  <div class="am-panel-bd am-panel-padding4">
+	    <center>
+	    	<a href="{:U('/Home/Activity/detail').'?id='.$vo['id']}">
+	    		<span class="am-badge am-badge-secondary activity-online">{$vo['online']?'线上活动':'线下活动'}</span>
+	    		<img class="am-radius activity-img" src="/Public/Uploads/{$vo['img']}" alt=""/>
+	    	</a>
+	    </center>
+	    <center class="activity-time">活动时间：<span class="am-badge">{$vo['start_time']}</span> - <span class="am-badge">{$vo['over_time']}</span> </center>
+	    <center><a type="button" class="am-btn <if condition="$vo['isOver']">am-btn-default am-disabled<else/>am-btn-success</if> am-radius am-btn-xs activity-join-btn" href="{:U('/Home/Activity/detail').'?id='.$vo['id']}"><if condition="$vo['isOver']">活动已结束<else/>活动报名</if></a></center>
+	  </div>
+	</div>
+
+  </li>
+ </volist>
+
+<empty name="acList">
+	<script type="text/javascript">$("#NoMoreProAlert").show()</script>
+<else />
+	<div id="ac_load_more"><button type="button" id="load_more_btn" class="am-btn am-btn-default am-btn-block btn-loading" onclick="LoadNextPage()">加载更多</button></div>
+</empty>

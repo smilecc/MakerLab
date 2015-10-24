@@ -5,55 +5,16 @@
   <div class="admin-content">
 
     <div class="am-cf am-padding">
-      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">我的项目</strong> / <small>Index</small></div>
+      <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">网站概述</strong> / <small>Index</small></div>
     </div>
 
     <ul class="am-avg-sm-1 am-avg-md-3 am-margin am-padding am-text-center admin-content-list ">
-      <li><span class="am-icon-btn am-icon-file-text"></span><br/>拥有项目<br/>{:count($pro)}</li>
-      <li><span class="am-icon-btn am-icon-briefcase"></span><br/>关注项目<br/>{:$page['answerCount']}</li>
-      <li><span class="am-icon-btn am-icon-recycle"></span><br/>参加活动<br/>{:$page['topicCount']}</li>
-
+      <li><span class="am-icon-btn am-icon-file-text"></span><br/>拥有项目<br/>{:$ProCount}</li>
+      <li><span class="am-icon-btn am-icon-user"></span><br/>拥有用户<br/>{:$UserCount}</li>
+      <li><span class="am-icon-btn am-icon-recycle"></span><br/>未审核项目<br/>{:$UncheckProCount}</li>
     </ul>
-
-    <div class="am-g">
-      <div class="am-u-md-12">
-        <div class="am-panel am-panel-default">
-          <div class="am-panel-hd am-cf" data-am-collapse="{target: '#collapse-panel-2'}">项目列表<span class="am-icon-chevron-down am-fr" ></span></div>
-          <div id="collapse-panel-2" class="am-in">
-            <table class="am-table am-table-bd am-table-bdrs am-table-striped">
-            <thead>
-              <tr>
-                <th class="am-text-center">#</th>
-                <th>项目名</th>
-                <th>状态</th>
-                <th>审核情况</th>
-                <th>创建时间</th>
-              </tr>
-          </thead>
-
-              <tbody>
-              <foreach name="pro" item="vo" key="k">
-              <tr>
-                <td class="am-text-center">{:$k+1}</td>
-                <td>{:$vo['name']}</td>
-                <td>{:$vo['ProcessName']}</td>
-                <td>{:($vo['allow']?'通过':'正在审核')}</td>
-                <td>{:$vo['time']}</td>
-              </tr>
-              </foreach>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </div>
-
-
-
-
-      </div>
     </div>
-  </div>
+
 
 
 </block>

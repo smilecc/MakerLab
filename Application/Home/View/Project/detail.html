@@ -1,6 +1,20 @@
 <extend name="Base/common"/>
 <block name="body">
 <title>{$proinfo['name']} - {:C('SITE_TITLE')}</title>
+<div class="am-modal am-modal-prompt" tabindex="-1" id="my-prompt">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">新增项目进程</div>
+    <div class="am-modal-bd">
+      <p>请描述你项目的最新进展</p>
+      <input id="ProcessContent" type="text" class="am-modal-prompt-input">
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>提交</span>
+    </div>
+  </div>
+</div>
+
   <div class="am-g" id="page-div">
     <header class="am-g my-head">
       <div class="am-u-sm-12 am-article">
@@ -12,11 +26,36 @@
               操作 <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
+              <li><a id="doc-prompt-toggle" href="javascript:;">新增进度</a></li>
               <li><a href="{:U('/Home/Project/edit').'?id='.$proinfo['id']}">修改信息</a></li>
               <li><a href="{:U('/Home/Project/editdetail').'?id='.$proinfo['id']}">编辑详情</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">删除</a></li>
+<!--               <li role="separator" class="divider"></li>
+              <li><a href="#">删除</a></li> -->
             </ul>
+
+<script type="text/javascript">
+$(function() {
+  $('#doc-prompt-toggle').on('click', function() {
+    $('#my-prompt').modal({
+      relatedTarget: this,
+      onConfirm: function(e) {
+          $.ajax({
+            type:"POST",
+            url:"/index.php/Home/Project/AddProcess.html",
+            data:{
+                  pid:{$proinfo['id']},
+                  content:$('#ProcessContent').val()
+                  },
+            success:function(re){
+              notify_re(re);
+              $('#messages').load('/index.php/Home/Project/process.html?pid={$proinfo['id']}');
+            }
+          });
+      }
+    });
+  });
+});
+</script>
           </div>
         </if>
         <span class="am-badge am-radius am-badge-success am-text-sm">{$proinfo['TagName']}</span>
@@ -38,7 +77,7 @@
         </ul>
         <hr/>
         <!-- Tab panes -->
-        <div class="tab-content">
+        <div class="tab-content detail-content">
           <div role="tabpanel" class="tab-pane active" id="home">{:ParseMd($proinfo['detail'])}</div>
           <div role="tabpanel" class="tab-pane" id="comment">
             <div data-am-widget="duoshuo" class="am-duoshuo am-duoshuo-default" data-ds-short-name="smilecc">
@@ -46,7 +85,12 @@
               </div>
             </div>
           </div>
-          <div role="tabpanel" class="tab-pane" id="messages">.3..</div>
+          <div role="tabpanel" class="tab-pane" id="messages">
+              
+          </div>
+          <script type="text/javascript">
+          $('#messages').load('/index.php/Home/Project/process.html?pid={$proinfo['id']}');
+          </script>
         </div>
 
       </div>

@@ -545,14 +545,14 @@
 
     function insertImg(cm, src, alt, width, height, align) {
         var cmdoc = cm.getDoc();
-        // '![{{alt}}]({{src}})'
-        var IMG = '<img width="{{width}}" height="{{height}}" class="{{align}}" src="{{src}}" alt="{{alt}}" />';
+        var IMG = '![{{alt}}]({{src}})';
+        //var IMG = '<img width="{{width}}" height="{{height}}" class="{{align}}" src="{{src}}" alt="{{alt}}" />';
         var content = replaceStr(IMG, {
             '{{src}}': src,
             '{{alt}}': alt,
-            '{{width}}': width,
-            '{{height}}': height,
-            '{{align}}': align
+            // '{{width}}': width,
+            // '{{height}}': height,
+            // '{{align}}': align
         });
         cmdoc.replaceSelection(content, 'end');
         cm.focus();

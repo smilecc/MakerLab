@@ -4,10 +4,12 @@
 	    <h3 class="am-panel-title"><?php echo ($vo['name']); ?></h3>
 	  </div>
 	  <div class="am-panel-bd am-panel-padding4">
-	    <a href="<?php echo U('/Home/Project/detail').'?id='.$vo['id'];?>"><img class="am-radius" src="/Public/Uploads/<?php echo ($vo['img']); ?>" alt=""/></a>
-        <span class="am-badge am-radius am-badge-success am-text-sm"><?php echo ($vo['TagName']); ?></span>
-        <span class="am-badge am-radius am-badge-warning am-text-sm"><?php echo ($vo['TypeName']); ?></span>
-        <span class="am-badge am-radius am-badge-danger am-text-sm"><?php echo ($vo['ProcessName']); ?></span>
+	    <center><a href="<?php echo U('/Home/Project/detail').'?id='.$vo['id'];?>"><img class="am-radius" src="/Public/Uploads/<?php echo ($vo['img']); ?>" alt=""/></a></center>
+	    <div class="project-type">
+	        <span class="am-badge am-radius am-badge-success am-text-sm"><?php echo ($vo['TagName']); ?></span>
+	        <span class="am-badge am-radius am-badge-warning am-text-sm"><?php echo ($vo['TypeName']); ?></span>
+	        <span class="am-badge am-radius am-badge-danger am-text-sm"><?php echo ($vo['ProcessName']); ?></span>
+        </div>
 	  </div>
 	  <div class="am-panel-footer"><span class="am-icon-user"> <?php echo ($vo['username']); ?></span></div>
 	</div>

@@ -1,0 +1,60 @@
+<extend name="Base/common"/>
+
+<block name="body">
+<script type="text/javascript">
+	$("#topbar-join").addClass("am-active");
+</script>
+<title>参与 - {:C('SITE_TITLE')}</title>
+
+<script type="text/javascript">
+  var online = {:$online};
+  var nowPage = 0;
+  function OnOnlineClick(status){
+    online = status;
+    RedirectPage();
+  }
+  function RedirectPage(){
+    window.location = "{:U('/Home/Activity/')}?" + 'online=' + online;
+  }
+  function LoadNextPage(){
+    ++nowPage;
+    var id = "#ac_load";
+    if(nowPage != 1) {
+      $('#load_more_btn').button('loading');
+      id = "#ac_load_more";
+    }
+    $(id).load('{:U("/Home/Activity/load")}?page=' + nowPage + '&online=' + online);
+  }
+</script>
+
+<ul class="list-group">
+  <li class="list-group-item">
+  <ul class="am-nav am-nav-pills am-text-xs project-type-list">
+    <li class="am-active"><a style="background-color:#5eb95e !important;">活动类型</a></li>
+    <li id="online-all"><a href="javascript:;" onclick="OnOnlineClick(-1)">全部</a></li>
+    <li id="online-on"><a href="javascript:;" onclick="OnOnlineClick(1)">线上活动</a></li>
+    <li id="online-off"><a href="javascript:;" onclick="OnOnlineClick(0)">线下活动</a></li>
+  </ul>
+  </li>
+</ul>
+
+
+<script type="text/javascript">
+  if({:$online} == -1)
+    $('#online-all').addClass('am-active');
+  else if({:$online} == 0)
+    $('#online-off').addClass('am-active');
+  else
+    $('#online-on').addClass('am-active');
+</script>
+
+<ul id="ac_load" class="am-avg-md-3 am-thumbnails">
+  <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+</ul>
+<script type="text/javascript">LoadNextPage();</script>
+
+<div id="NoMoreProAlert" class="NoMore-alert am-alert am-alert-default" data-am-alert>
+  <p class="am-text-center">没有更多的活动了</p>
+</div>
+
+</block>

@@ -35,7 +35,7 @@
 
 <ul class="list-group">
   <li class="list-group-item">
-	<ul class="am-nav am-nav-pills am-text-xs">
+	<ul class="am-nav am-nav-pills am-text-xs project-type-list">
 	  <li class="am-active"><a style="background-color:#5eb95e !important;">项目类型</a></li>
 	  <li id="type-0"><a href="javascript:;" onclick="OnTypeClick(0)">全部</a></li>
 	  <volist name="type" id="vo">
@@ -44,7 +44,7 @@
 	</ul>
   </li>
   <li class="list-group-item">
-	<ul class="am-nav am-nav-pills am-text-xs">
+	<ul class="am-nav am-nav-pills am-text-xs project-type-list">
 	  <li class="am-active"><a style="background-color:#5eb95e !important;">项目状态</a></li>
 	  <li id="process-0"><a href="javascript:;" onclick="OnProcessClick(0)">全部</a></li>
 	  <volist name="process" id="vo">
@@ -65,7 +65,7 @@
 </ul>
 <script type="text/javascript">LoadNextPage();</script>
 
-<div id="NoMoreProAlert" style="display:none;" class="am-alert am-alert-success" data-am-alert>
+<div id="NoMoreProAlert" class="NoMore-alert am-alert am-alert-default" data-am-alert>
   <p class="am-text-center">没有更多的项目了</p>
 </div>
 </block>

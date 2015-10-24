@@ -38,4 +38,38 @@ footer {
 }
 .am-panel-padding4{
     padding: 5.5px;
+    padding-bottom: 0px !important;
+}
+.project-type-list{
+	margin: 0px;
+}
+.activity-time{
+	margin: 15px auto;
+	font-size: 1.2rem;
+}
+.activity-join-btn{
+	width: 220px;
+	margin-bottom: 10px;
+}
+.activity-img{
+	z-index:1;
+}
+.activity-online{
+	position:absolute;
+ 	z-index:2;
+}
+.detail-content img { max-width: 100%}
+.NoMore-alert{
+	display:none;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 37px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+.activity-detail-join-btn{
+	width: 100%;
+}
+.project-type{
+	margin: 4px auto;
 }

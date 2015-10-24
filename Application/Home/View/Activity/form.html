@@ -1,0 +1,31 @@
+<extend name="Base/common"/>
+<block name="body">
+
+<title>填写活动申请表单 - {:C('SITE_TITLE')}</title>
+
+<form class="am-form" method="post" action="{:U('/Home/Activity/SetForm')}">
+<input type="hidden" name="id" value="{$proInfo['id']}">
+<ol class="am-breadcrumb am-fr">
+<li><span class="am-badge am-badge-primary am-radius am-text-sm">填写信息</span></li>
+<li><span class="am-badge am-radius am-text-sm">等待审核</span></li>
+</ol>
+  <fieldset>
+
+    <legend>填写活动申请表单 <small>{$proInfo['name']}</small></legend>
+
+    <volist name="questionList" id="vo">
+      <div class="am-form-group">
+        <label for="doc-ipt-email-1">{$vo['question']}</label>
+      <if condition="$vo['input_element'] eq 0">
+          <input type="text" name="{$vo['id']}" name="name" required/>
+      <else/>
+          <textarea name="{$vo['id']}" rows="6"required/></textarea>
+        </if>
+      </div>
+    </volist>
+    <p><button type="submit" class="am-btn am-btn-success">提交申请</button></p>
+  </fieldset>
+</form>
+
+
+</block>
