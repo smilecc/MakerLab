@@ -111,6 +111,7 @@ class ActivityController extends Controller {
         {
             if(M('ActivityForm')->where('id=%d',$id)->delete() > 0)
             {
+                // 删除相应问题的所有答案
                 M('ActivityFormAnswer')->where('question_id=%d',$id)->delete();
                 $resultArr['status'] = true;
                 $resultArr['info'] = '删除成功';

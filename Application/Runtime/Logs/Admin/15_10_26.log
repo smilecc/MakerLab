@@ -1,0 +1,155 @@
+[ 2015-10-26T16:35:36+08:00 ] ::1 /index.php/Admin/Activity/detail.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `lab_activity` [ RunTime:0.0015s ]
+SQL: SELECT `detail` FROM `lab_activity` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2015-10-26T16:35:40+08:00 ] ::1 /index.php/Admin/Activity/form.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `lab_activity_form` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `lab_activity_form` WHERE ( activity_id=3 )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+SQL: SELECT `random` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `admin` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2015-10-26T16:35:50+08:00 ] ::1 /index.php/Admin/Check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `lab_project` WHERE ( allow=0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+SQL: SELECT `random` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `admin` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2015-10-26T16:35:51+08:00 ] ::1 /index.php/Admin/Activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0020s ]
+SQL: SELECT `random` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `admin` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 102 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 171 行.
+NOTIC: [8] Undefined variable: proinfo /Users/smilec/Code/Lab/Application/Runtime/Cache/Admin/c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2015-10-26T16:35:52+08:00 ] ::1 /index.php/Admin/Check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `lab_project` WHERE ( allow=0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0017s ]
+SQL: SELECT `random` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `admin` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2015-10-26T16:36:02+08:00 ] ::1 /index.php/Admin/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `lab_project` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lab_project` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lab_user` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lab_project` WHERE ( allow=0 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `lab_user` [ RunTime:0.0013s ]
+SQL: SELECT `random` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `admin` FROM `lab_user` WHERE ( username="Smilec" ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+

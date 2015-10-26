@@ -77,7 +77,7 @@
       <li class="" id="topbar-index"><a href="/">首页</a></li>
       <li id="topbar-find"><a href="<?php echo U('/Home/Project');?>">发现</a></li>
       <li id="topbar-join"><a href="<?php echo U('/Home/Activity');?>">参与</a></li>
-      <li id="topbar-good"><a href="<?php echo U('/Home/Topic');?>">优势</a></li>
+<!--       <li id="topbar-good"><a href="<?php echo U('/Home/Topic');?>">优势</a></li> -->
       <li id="topbar-addproject"><a href="<?php echo U('/Home/Project/submit');?>">+ 提交项目</a></li>
     </ul>
 

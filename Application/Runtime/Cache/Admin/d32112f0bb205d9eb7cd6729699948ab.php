@@ -62,8 +62,8 @@
     <div class="am-offcanvas-bar admin-offcanvas-bar">
       <ul class="am-list admin-sidebar-list">
         <li><a href="<?php echo U('/Admin/Index');?>"><span class="am-icon-home"> 系统概述</span></a></li>
-        <li><a href="<?php echo U('/Admin/Check');?>"><span class="am-icon-user"> 项目审核</span></a></li>
-        <li><a href="<?php echo U('/Admin/Activity');?>"><span class="am-icon-user"> 创建活动</span></a></li>
+        <li><a href="<?php echo U('/Admin/Check');?>"><span class="am-icon-server"> 项目审核</span></a></li>
+        <li><a href="<?php echo U('/Admin/Activity');?>"><span class="am-icon-soccer-ball-o"> 创建活动</span></a></li>
         <li><a href="<?php echo U('/');?>"><span class="am-icon-sign-out"> 返回主站</span></a></li>
       </ul>
       

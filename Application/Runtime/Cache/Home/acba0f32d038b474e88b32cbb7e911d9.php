@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit(); if(is_array($acList)): $i = 0; $__LIST__ = $acList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
-	<div class="am-panel am-panel-default">
+	<div class="am-panel am-panel-default board">
 	  <div class="am-panel-bd am-panel-padding4">
 	    <center>
 	    	<a href="<?php echo U('/Home/Activity/detail').'?id='.$vo['id'];?>">
