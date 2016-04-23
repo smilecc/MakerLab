@@ -16,10 +16,28 @@
 </block>
 
 <block name="body">
+<style type="text/css">
+  .btn-loading{display: none}
+</style>
 <script type="text/javascript">
 	$("#topbar-index").addClass("am-active");
 </script>
 <title>首页 - {:C('SITE_TITLE')}</title>
 
+<h2>最近的项目</h2>
+<hr/>
+<ul id="pro_load" class="am-avg-md-3 am-thumbnails">
+  <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+</ul>
 
+<h2>最近的活动</h2>
+<hr/>
+<ul id="ac_load" class="am-avg-md-3 am-thumbnails">
+  <button type="button" class="am-btn am-btn-default am-btn-block"><i class="am-icon-spinner am-icon-spin"></i> 加载中</button>
+</ul>
+
+<script type="text/javascript">
+  $('#pro_load').load('{:U("/Home/Project/load")}?page=1&type=0&process=0');
+  $('#ac_load').load('{:U("/Home/Activity/load")}?page=1&online=-1');
+</script>
 </block>
